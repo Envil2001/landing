@@ -1,13 +1,50 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+  body {
+    @apply bg-main-background m-0 p-0 text-white
+  }
+
+  .Body-13 {
+    @apply font-extrabold leading-4 text-gray-500  text-base	
+  }
+  .Title {
+    @apply text-[50px] text-white font-extrabold leading-[50px]
+  }
+  .normal-text {
+    @apply font-normal text-xl	text-white
+  }
+  .row {
+    @apply flex-auto flex flex-wrap
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
+
+*, :after, :before {
+  box-sizing: border-box;
+  font-weight: 400;
+  outline: none!important;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 130rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.svg, img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
