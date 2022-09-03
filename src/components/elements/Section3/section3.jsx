@@ -1,5 +1,3 @@
-import Button from "../../UI/Button/Button";
-
 import Ad from "../../../assets/ad.png";
 const Section3 = () => {
     return (
@@ -15,7 +13,7 @@ const Section3 = () => {
 
                     </div>
                     <div className="md:p-16 md:w-2/4  p-8 w-full">
-                        <img src={Ad} className="rounded-md overflow-hidden" />
+                        <img alt="ads" src={Ad} className="rounded-md overflow-hidden" />
                     </div>
                 </div>
             </div>

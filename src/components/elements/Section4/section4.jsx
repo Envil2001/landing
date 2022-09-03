@@ -1,5 +1,3 @@
-import Button from "../../UI/Button/Button";
-
 import Play from "../../../assets/play.png";
 const Section4 = () => {
     return (
@@ -10,7 +8,7 @@ const Section4 = () => {
                         <h1 className="Title ">Play and enjoy.</h1>
                     </div>
                     <div>
-                        <img src={Play} className="max-w-[40rem] w-full m-auto rounded-md overflow-hidden"/>
+                        <img alt="play" src={Play} className="max-w-[40rem] w-full m-auto rounded-md overflow-hidden"/>
                     </div>
                 </div>
             </div>

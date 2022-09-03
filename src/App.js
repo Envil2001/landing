@@ -8,24 +8,26 @@ import { Team } from "./components/elements/team/team";
 
 import Faq from "./components/elements/faq/faq";
 import RealeseNote from "./components/elements/RealeseNote/realese-note";
-import Modal from "./components/elements/Modal/Modal";
+import Burger from "./components/elements/BurgerMenu/Burger";
 
 function App() {
   const [menuActive, setMenuActive] = useState(false);
+
   return (
     <>
-      <div className="App">
-        <Header menuActive={menuActive} setMenuActive={setMenuActive} />
-        <div className="py-28">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/team" element={<Team />} />
-            <Route path="/faq" element={<Faq />} />
-            <Route path="/release-notes" element={<RealeseNote />} />
-          </Routes>
-        </div>
+
+      <Header menuActive={menuActive} setMenuActive={setMenuActive} />
+      <div className="py-28">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/faq" element={<Faq />} />
+          <Route path="/release-notes" element={<RealeseNote />} />
+        </Routes>
       </div>
-      <Modal mobileMenuActive={menuActive} setMobileMenuActive={setMenuActive}/>
+
+
+      <Burger mobileMenuActive={menuActive} setMobileMenuActive={setMenuActive} />
     </>
   );
 }

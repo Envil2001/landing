@@ -1,4 +1,3 @@
-import Button from "../../UI/Button/Button";
 import Libr from "../../../assets/library.jpg";
 
 const Section2 = () => {
@@ -14,7 +13,7 @@ const Section2 = () => {
                         </div>
                     </div>
                     <div className="md:p-16 md:w-2/4  p-8 w-full">
-                        <img src={Libr} className="rounded-md overflow-hidden" />
+                        <img alt="library" src={Libr} className="rounded-md overflow-hidden" />
                     </div>
                 </div>
             </div>

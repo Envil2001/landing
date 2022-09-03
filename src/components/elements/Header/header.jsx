@@ -35,7 +35,7 @@ const Header = ({ menuActive, setMenuActive }) => {
         setMenuActive(!menuActive);
     }
     return (
-        <header className={`fixed z-20 w-full  translate-y-0 ease-in-out duration-300  ${!showHeader && 'translate-y-[-100%]'}`}>
+        <header className={`fixed z-20 w-full  translate-y-0 ease-in-out duration-300  ${!showHeader ? 'translate-y-[-100%]' : ''}`}>
             <div className="md:h-32 h-24 w-full flex items-center">
                 <div className="container lg:px-16 px-8">
                     <div className="flex items-center">
@@ -46,7 +46,7 @@ const Header = ({ menuActive, setMenuActive }) => {
                         <div className="sm:flex hidden items-center Body-13 cursor-pointer text-white md:justify-start md:flex-none justify-center flex-auto">
                             <Link to="/">
                                 <div className="flex">
-                                    <img src={Logo} className="mr-10" />
+                                    <img alt="logo" src={Logo} className="mr-10" />
                                     Playmanity
                                 </div>
                             </Link>
@@ -55,7 +55,7 @@ const Header = ({ menuActive, setMenuActive }) => {
                         <div className="hidden md:flex items-center justify-center flex-auto gap-x-20">
                             {
                                 headerMenu.map((item, index) => (
-                                    <Link to={item.link}><div key={index} className="Body-13 text-white cursor-pointer hover:text-brand">{item.name}</div></Link>
+                                    <Link to={item.link} key={index}><div  className="Body-13 text-white cursor-pointer hover:text-brand">{item.name}</div></Link>
                                 ))
                             }
                         </div>

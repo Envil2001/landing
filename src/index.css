@@ -11,17 +11,35 @@
   }
 
   .Body-13 {
-    @apply font-extrabold leading-4 text-gray-500  text-base	
+    @apply font-extrabold leading-4 text-gray-500 text-base
   }
+
   .Title {
     @apply text-[50px] text-white font-extrabold leading-[50px]
   }
+
   .normal-text {
-    @apply font-normal text-xl	text-white
+    @apply font-normal text-xl text-white
   }
+
   .row {
     @apply flex-auto flex flex-wrap
   }
+
+  .blurState {
+    @apply backdrop-blur-lg transition-all
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-2
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-lg bg-primary 
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-neutral-900
+  }
+
 }
 
 
@@ -30,10 +48,12 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-*, :after, :before {
+*,
+:after,
+:before {
   box-sizing: border-box;
   font-weight: 400;
-  outline: none!important;
+  outline: none !important;
   text-decoration: none;
 }
 
@@ -43,8 +63,10 @@ body {
   margin: 0 auto;
 }
 
-.svg, img {
+.svg,
+img {
   max-width: 100%;
   vertical-align: middle;
 }
+
 

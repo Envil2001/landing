@@ -17,10 +17,10 @@ export function Team() {
             <div className="mt-40">
                 <h2 className="Title text-center mb-20">The Playmanity Team</h2>
                 <div className="grid gap-10 sm:grid-cols-4 grid-cols-1 justify-items-center">
-                    <img src={Max} className="rounded-full w-60 max-h-60 object-cover"  />
-                    <img src={Andrew} className="rounded-full w-60 max-h-60 object-cover" />
-                    <img src={Vanya} className="rounded-full w-60 max-h-60 object-cover" />
-                    <img src={Vasia} className="rounded-full w-60 max-h-60 object-cover" />
+                    <img alt="Max" src={Max} className="rounded-full w-60 max-h-60 object-cover"  />
+                    <img alt="Andrew" src={Andrew} className="rounded-full w-60 max-h-60 object-cover" />
+                    <img alt="Vanya" src={Vanya} className="rounded-full w-60 max-h-60 object-cover" />
+                    <img alt="Vasia" src={Vasia} className="rounded-full w-60 max-h-60 object-cover" />
                 </div>
             </div>
         </div>

@@ -2,39 +2,39 @@ import { useState } from "react"
 
 const data = [
     {
-        question: 'How do I apply to BETA?',
+        question: 'When will be a full release of Playmanity for everyone?',
+        answer: "Our asses are currently on fire to release Playmanity as soon as possible.",
+    },
+    {
+        question: 'How do I apply to BETA of Playmanity?',
         answer: "Just join our Discord server and wait for the next beta test.",
     },
     {
-        question: 'Where can I download Playmanity App?',
-        answer: "We are still developing our platform so check for updates.",
-    },
-    {
-        question: 'When will be a full release of Playmanity for everyone?',
-        answer: "We are currently on fire to release Playmanity as soon as possible. But for now, it is still in the development process.",
+        question: 'What operating systems does Playmanity support?',
+        answer: "Playmanity supports Windows, macOS, and Linux.",
     },
     {
         question: 'Is this a cloud gaming platform?',
         answer: "No, for now, we don't support cloud gaming, but later on, maybe.",
     },
     {
-        question: 'What operating systems does Playmanity support?',
-        answer: "Playmanity support Windows, macOS, and Linux operating systems.",
+        question: 'What games will there be?',
+        answer: "ou can find all of our available games here - https://bit.ly/playmanitygames ",
     },
     {
-        question: 'What games will there be?',
-        answer: "You can find all of our available games in 🎮・games channel on Discord.",
+        question: 'How do ads work?',
+        answer: "Ads show before, after a game session, while loading screen or when game dev decide",
     },
     {
-        question: 'What games will there be?',
-        answer: "We will launch on Kickstarter on August 27, so you can support us on Kickstarter. Register and click Remind me and check for updates on social media.",
+        question: 'How can I help you to grow financially?',
+        answer: "For now, we are doing it without any money and if you want to help, text us and we will do Patreon soon",
     }
 ]
 const Faq = () => {
     const [select, setSelected] = useState(null);
 
     const toggle = (i) => {
-        if(select == i) {
+        if(select === i) {
             return setSelected(null);
         }
         setSelected(i);
@@ -49,9 +49,9 @@ const Faq = () => {
                     {
                         data.map((item, i) => (
                             <div key={i}>
-                                <div className="flex items-center cursor-pointer hover:text-brand gap-5 py-5" onClick={() => toggle(i)}>
-                                    <span className="Body-13 text-white flex-1">{item.question}</span>
-                                    <span>{select === i ? "-" : "+"}</span>
+                                <div className={`group flex items-center cursor-pointer  gap-5 py-5`} onClick={() => toggle(i)}>
+                                    <span className={`${select === i && "text-brand" } Body-13 group-hover:text-brand text-white flex-1`}>{item.question}</span>
+                                    <span className="group-hover:text-brand">{select === i ? "-" : "+"}</span>
                                 </div>
                                 <div className={select === i ? "block" : "hidden"}>
                                     <p className="Body-13">{item.answer}</p>
