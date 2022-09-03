@@ -8,8 +8,7 @@ const Section2 = () => {
                     <div className="md:p-16 md:w-2/4  p-8 w-full">
                         <h1 className="Title">Choose the game you like.</h1>
                         <div className="mt-16">
-                            <span className="normal-text">All-in-one solution to organize, grow and monetize gaming
-                                communities and esports competitions.</span>
+                            <span className="normal-text">View a short advertisement..</span>
                         </div>
                     </div>
                     <div className="md:p-16 md:w-2/4  p-8 w-full">
