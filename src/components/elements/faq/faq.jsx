@@ -49,7 +49,7 @@ const Faq = () => {
                     {
                         data.map((item, i) => (
                             <div key={i}>
-                                <div className={`group flex items-center cursor-pointer  gap-5 py-5`} onClick={() => toggle(i)}>
+                                <div className={`group flex items-center cursor-pointer gap-5 py-5`} onClick={() => toggle(i)}>
                                     <span className={`${select === i && "text-brand" } Body-13 group-hover:text-brand text-white flex-1`}>{item.question}</span>
                                     <span className="group-hover:text-brand">{select === i ? "-" : "+"}</span>
                                 </div>

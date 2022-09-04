@@ -9,6 +9,7 @@ import { Team } from "./components/elements/team/team";
 import Faq from "./components/elements/faq/faq";
 import RealeseNote from "./components/elements/RealeseNote/realese-note";
 import Burger from "./components/elements/BurgerMenu/Burger";
+import Footer from "./components/elements/Footer/footer";
 
 function App() {
   const [menuActive, setMenuActive] = useState(false);
@@ -25,6 +26,7 @@ function App() {
           <Route path="/release-notes" element={<RealeseNote />} />
         </Routes>
       </div>
+      <Footer />
 
 
       <Burger mobileMenuActive={menuActive} setMobileMenuActive={setMenuActive} />

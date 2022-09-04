@@ -11,7 +11,7 @@
   }
 
   .Body-13 {
-    @apply font-extrabold leading-4 text-gray-500 text-base
+    @apply font-extrabold leading-4 text-text-body text-base
   }
 
   .Title {

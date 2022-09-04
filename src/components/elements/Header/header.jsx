@@ -45,8 +45,8 @@ const Header = ({ menuActive, setMenuActive }) => {
                         </div>
                         <div className="sm:flex hidden items-center Body-13 cursor-pointer text-white md:justify-start md:flex-none justify-center flex-auto">
                             <Link to="/">
-                                <div className="flex">
-                                    <img alt="logo" src={Logo} className="mr-10" />
+                                <div className="flex font-semibold">
+                                    <img alt="logo" src={Logo} className="mr-6" />
                                     Playmanity
                                 </div>
                             </Link>
@@ -55,7 +55,7 @@ const Header = ({ menuActive, setMenuActive }) => {
                         <div className="hidden md:flex items-center justify-center flex-auto gap-x-20">
                             {
                                 headerMenu.map((item, index) => (
-                                    <Link to={item.link} key={index}><div  className="Body-13 text-white cursor-pointer hover:text-brand">{item.name}</div></Link>
+                                    <Link to={item.link} key={index}><div className="Body-13 text-white cursor-pointer hover:text-brand">{item.name}</div></Link>
                                 ))
                             }
                         </div>

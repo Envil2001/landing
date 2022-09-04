@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       colors: {
         'main-background': '#111213',
+        'text-body': '#686C78',
         'primary': '#1A1B1E',
         'brand': '#5F62F1',
         'small-btn': 'rgba(36, 38, 44, 0.4)'

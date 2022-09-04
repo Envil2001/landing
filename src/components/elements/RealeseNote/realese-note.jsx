@@ -3,6 +3,14 @@ const RealeseNote = () => {
     return (
         <div className="w-full m-auto lg:px-16 px-8 pt-40 max-w-[900px] space-y-8">
             <div>
+                <h3 className="Title">1.1.0</h3>
+                <span className="Body-13">Fri Aug 12 2022</span>
+                <ul className="list-disc mt-5">
+                    <li>Created PC app</li>
+                    <li>Seamless game downloading and launching</li>
+                </ul>
+            </div>
+            <div>
                 <h3 className="Title">1.0.4</h3>
                 <span className="Body-13">Sun Jul 31 2022</span>
                 <ul className="list-disc mt-5">
@@ -24,7 +32,7 @@ const RealeseNote = () => {
                 <span className="Body-13">Thu Jul 28 2022</span>
                 <ul className="list-disc mt-5">
                     <li>Started release notes</li>
-                    <li>Fixed issue with not opening registration page</li>                   
+                    <li>Fixed issue with not opening registration page</li>
                 </ul>
             </div>
             <div>
