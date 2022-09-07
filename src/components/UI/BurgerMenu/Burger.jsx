@@ -31,7 +31,7 @@ const Burger = ({ mobileMenuActive, setMobileMenuActive }) => {
                                     </Link>
                                 ))
                             }
-                            <ButtonClose classes={"absolute -top-10 right-0"} height={7} width={7} fState={mobileMenuActive} setFState={setMobileMenuActive}/>
+                            <ButtonClose classes={"absolute -top-10 right-0"} height={10} width={10} fState={mobileMenuActive} setFState={setMobileMenuActive}/>
                         </div>
 
                         :
