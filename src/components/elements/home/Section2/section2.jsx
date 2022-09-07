@@ -1,4 +1,4 @@
-import Libr from "../../../assets/library.jpg";
+import Libr from "../../../../assets/library.jpg";
 
 const Section2 = () => {
     return (

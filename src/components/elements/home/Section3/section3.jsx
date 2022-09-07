@@ -1,4 +1,4 @@
-import Ad from "../../../assets/ad.png";
+import Ad from "../../../../assets/ad.png"
 const Section3 = () => {
     return (
         <div className="relative">

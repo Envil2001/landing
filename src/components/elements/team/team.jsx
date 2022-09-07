@@ -3,7 +3,7 @@ import Andrew from "../../../assets/team/andrew.jpg";
 import Vanya from "../../../assets/team/vanya.jpg";
 import Vasia from "../../../assets/team/vasia.jpg";
 
-export function Team() {
+const Team = () => {
     return (
         <div className="container lg:px-16 px-8 pt-40">
             <div>
@@ -26,3 +26,5 @@ export function Team() {
         </div>
     )
 }
+
+export default Team;

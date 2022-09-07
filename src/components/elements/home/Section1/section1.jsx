@@ -1,5 +1,6 @@
-import Button from "../../UI/Button/Button";
-import Image1 from "../../../assets/titleimage.jpg";
+import Button from "../../../UI/Button/Button";
+
+import Image1 from "../../../../assets/titleimage.jpg";
 
 const Section1 = ({ modalActive, setModalActive }) => {
     return (

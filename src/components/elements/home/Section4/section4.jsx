@@ -1,4 +1,4 @@
-import Play from "../../../assets/play.png";
+import Play from "../../../../assets/play.png";
 const Section4 = () => {
     return (
         <div className="relative">

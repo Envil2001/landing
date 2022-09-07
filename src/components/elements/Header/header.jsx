@@ -1,7 +1,10 @@
-import Button from "../../UI/Button/Button";
+
 import Logo from "../../../assets/logo.png";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import Button from "../../UI/Button/Button";
+
+
 
 const Header = ({ menuActive, setMenuActive }) => {
     const [showHeader, setShowHeader] = useState(true);
