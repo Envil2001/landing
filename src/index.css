@@ -33,13 +33,18 @@
   ::-webkit-scrollbar {
     @apply w-2
   }
+
   ::-webkit-scrollbar-thumb {
-    @apply rounded-lg bg-primary 
+    @apply rounded-lg bg-primary
   }
+
   ::-webkit-scrollbar-thumb:hover {
     @apply bg-neutral-900
   }
 
+  input::placeholder {
+    @apply text-input-text
+  }
 }
 
 
@@ -70,3 +75,33 @@ img {
 }
 
 
+.arrow:after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  color: #fff;
+  border-top: 2px solid;
+  border-left: 2px solid;
+  display: inline-block;
+  transform: translateY(0px);
+  transform: rotateZ(225deg);
+}
+
+.arrow:after {
+  /*  you can change the 1 to infinte to make an infinite loop  */
+  animation: arrowSlide 3s infinite;
+}
+
+@keyframes arrowSlide {
+  0% {
+    transform: translateY(0) rotateZ(225deg);
+  }
+
+  50% {
+    transform: translateY(-0.4em) rotateZ(225deg);
+  }
+
+  100% {
+    transform: translateY(0) rotateZ(225deg);
+  }
+}

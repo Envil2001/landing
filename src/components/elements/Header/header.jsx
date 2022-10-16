@@ -31,7 +31,7 @@ const Header = ({ menuActive, setMenuActive }) => {
         {
             name: "Release notes",
             link: "/release-notes"
-        },
+        }
     ];
 
     const handleChange = () => {

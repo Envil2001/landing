@@ -6,6 +6,66 @@ import Twitter from "../../../assets/icon/twitter.svg";
 import YouTube from "../../../assets/icon/youtube.svg";
 import { Link } from "react-router-dom";
 
+const footerInfo = [
+    {
+        name: "Home",
+        link: "/",
+    },
+    {
+        name: "Our team",
+        link: "/team",
+    },
+    {
+        name: "FAQ",
+        link: "/faq",
+    },
+    {
+        name: "Release notes",
+        link: "/release-notes",
+    },
+    {
+        name: "For Advertisers",
+        link: "/for-advertisers",
+    },
+    {
+        name: "For Game Developers",
+        link: "/for-game-developers",
+    }
+];
+
+const linkIcon = [
+    {
+        name: "Tik Tok",
+        link: "https://www.tiktok.com/@playmanity",
+        image: TikTok
+    },
+    {
+        name: "Instagram",
+        link: "https://www.instagram.com/playmanity/",
+        image: Instagram
+    },
+    {
+        name: "Telegram",
+        link: "https://t.me/playmanity",
+        image: Telegram
+    },
+    {
+        name: "Diskord",
+        link: "https://discord.com/invite/playmanity",
+        image: Diskord
+    },
+    {
+        name: "Twitter",
+        link: "https://twitter.com/playmanity",
+        image: Twitter
+    },
+    {
+        name: "YouTube",
+        link: "https://www.youtube.com/channel/UCx6Lrn7heLP17FNc1eNqQZA",
+        image: YouTube
+    },
+]
+
 const Footer = () => {
     return (
         <footer>
@@ -14,30 +74,20 @@ const Footer = () => {
                     <h3 className="text-white font-bold text-lg">Playmanity</h3>
                     <p className="text-sm text-text-body pb-10">Email: playmanity@gmail.com</p>
                     <div className="gap-2 flex">
-                        <a href="https://www.tiktok.com/@playmanity" className="rounded-full h-10 w-10 flex justify-center items-center bg-primary">
-                            <img src={TikTok} alt="Tik Tok" className="w-5" />
-                        </a>
-                        <a href="https://www.instagram.com/playmanity/" className="rounded-full h-10 w-10 flex justify-center items-center bg-primary">
-                            <img src={Instagram} alt="Instagram" className="w-5" />
-                        </a>
-                        <a href="https://t.me/playmanity" className="rounded-full h-10 w-10 flex justify-center items-center bg-primary">
-                            <img src={Telegram} alt="Telegram" className="w-5" />
-                        </a>
-                        <a href="https://discord.com/invite/playmanity" className="rounded-full h-10 w-10 flex justify-center items-center bg-primary">
-                            <img src={Diskord} alt="Diskord" className="w-5" />
-                        </a>
-                        <a href="https://twitter.com/playmanity" className="rounded-full h-10 w-10 flex justify-center items-center bg-primary">
-                            <img src={Twitter} alt="Twitter" className="w-5" />
-                        </a>
-                        <a href="https://www.youtube.com/channel/UCx6Lrn7heLP17FNc1eNqQZA" className="rounded-full h-10 w-10 flex justify-center items-center bg-primary">
-                            <img src={YouTube} alt="YouTube" className="w-5" />
-                        </a>
+                        {
+                            linkIcon.map((item, index) => (
+                                <a key={index} href={item.link} className="rounded-full h-10 w-10 flex justify-center items-center bg-primary">
+                                    <img src={item.image} alt={item.name} className="w-5" />
+                                </a>
+                            ))
+                        }
                     </div>
                     <div className="flex gap-8 pt-8">
-                        <span><Link to="/">Home</Link></span>
-                        <span><Link to="/team">Our team</Link></span>
-                        <span><Link to="/faq">FAQ</Link></span>
-                        <span><Link to="/release-notes">Release notes</Link></span>
+                        {
+                            footerInfo.map((item, index) => (
+                                <span key={index}><Link to={item.link} key={index}>{item.name}</Link></span>
+                            ))
+                        }
                     </div>
                 </div>
                 <div className="flex items-center justify-center pt-3 gap-2 text-center flex-col">

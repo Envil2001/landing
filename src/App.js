@@ -10,6 +10,9 @@ import Home from "./components/elements/home/home";
 import Team from "./components/elements/team/team";
 import Faq from "./components/elements/faq/faq";
 import RealeseNote from "./components/elements/RealeseNote/realese-note";
+import ForAds from "./components/elements/forAds/forAds";
+import ForDevelopers from "./components/elements/forDevelopers/forDevelopers";
+
 
 
 function App() {
@@ -25,6 +28,8 @@ function App() {
           <Route path="/team" element={<Team />} />
           <Route path="/faq" element={<Faq />} />
           <Route path="/release-notes" element={<RealeseNote />} />
+          <Route path="/for-advertisers" element={<ForAds />} />
+          <Route path="/for-game-developers" element={<ForDevelopers />} />
         </Routes>
       </div>
       <Footer />
